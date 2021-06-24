@@ -1,0 +1,37 @@
+.sideMenu {
+  background: #eaeaea;
+}
+
+.sideMenu a {
+  color: #a6abb2;
+  text-decoration: none;
+}
+.klashaLogo {
+  margin: 20px 0 20px 20px;
+}
+
+.sideMenu {
+  font-family: "Space Grotesk" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.sideMenu span {
+  font-family: "Space Grotesk" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.sideMenu-heading {
+  margin-left: 20px;
+  color: #2a2a2a;
+  font-size: 14px;
+}
+
+.white-bg {
+  background: #ffffff !important;
+}

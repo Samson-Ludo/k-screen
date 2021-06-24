@@ -1,0 +1,176 @@
+tr {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #2a2a2a;
+}
+
+/* .payout-table {
+  width: 100%;
+  overflow-x: auto !important;
+} */
+.payout {
+  margin-top: 40px;
+}
+
+.payout-navbar {
+  min-width: 320px !important;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+.navbar-title {
+  flex-grow: 5;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  color: #2a2a2a;
+}
+
+.navbar-searchbar {
+  flex-grow: 2.5;
+}
+
+.searchIcon {
+  filter: grayscale(100%);
+  color: #534f57;
+}
+
+.navbar-datepicker {
+  flex-grow: 1.5;
+  position: relative;
+}
+
+.datepicker {
+  width: 117px;
+  height: 42px;
+  margin-left: 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2a2a2a;
+}
+
+.calendarIcon {
+  position: absolute;
+  width: 8.88px;
+  height: 9.28px;
+  top: 16px;
+  right: 35% !important;
+  z-index: 10;
+}
+
+.navbar-payoutBtn {
+  flex-grow: 1;
+}
+
+.payout-btn {
+  width: 104px !important;
+  background: #3d8f83 !important;
+  border-radius: 4px !important;
+}
+
+.payout-btn:hover {
+  background: #1e4640 !important;
+}
+
+.tablehead {
+  background: #f5f5f5;
+}
+
+.tablehead h6 {
+  margin: 0;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #2a2a2a;
+}
+
+.tablebody p {
+  margin: 0;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2a2a2a;
+}
+
+.seeMore-btn {
+  width: 100%;
+  height: 60px;
+  background: #ffffff !important;
+  border: 1px solid #ebebeb !important;
+  box-sizing: border-box;
+  font-family: "Space Grotesk" !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 22px;
+  color: #2c665d !important;
+  text-transform: none !important;
+}
+
+.seeMore-btn:hover {
+  background: #2c665d !important;
+  color: #ffffff !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .tablecontainer {
+    max-width: 320px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+  }
+
+  .navbar-title h3 {
+    margin-top: 0;
+  }
+
+  .payout-table {
+    width: 100% !important;
+    overflow-x: auto !important;
+  }
+
+  .payout {
+    min-width: 100% !important;
+  }
+
+  .calendarIcon {
+    right: 12% !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-title h3 {
+    margin-top: 0;
+  }
+  .payout-table {
+    min-width: 500px !important;
+    overflow-x: auto !important;
+  }
+
+  .payout {
+    min-width: 100% !important;
+  }
+
+  .calendarIcon {
+    right: 12% !important;
+  }
+}
