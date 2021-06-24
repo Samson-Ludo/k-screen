@@ -1,14 +1,55 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+import MenuItem from "@material-ui/core/MenuItem";
 import "./BalanceCards.css";
 
+const currencies = [
+  {
+    value: "USD",
+    label: "USD",
+  },
+];
+
+const useStyles = makeStyles(() => ({
+  multilineColor: {
+    color: "#000000",
+    background: "#F5F5F5",
+    marginLeft: "8px",
+    paddingLeft: "5px",
+    fontFamily: "Space Grotesk",
+  },
+}));
+
 function BalanceCards() {
+  const classes = useStyles();
+  const [currency, setCurrency] = React.useState("USD");
+
+  const handleCurrency = (event) => {
+    setCurrency(event.target.value);
+  };
   return (
     <div className="balances">
       <div className="acctBalance">
         <div className="title">
           <h5 className="title-text">Total Account Balance</h5>
           <div className="title-currency">
-            <p>USD</p>
+            <TextField
+              className="title-currency"
+              select
+              label=""
+              value={currency}
+              onChange={handleCurrency}
+              InputProps={{
+                className: classes.multilineColor,
+              }}
+            >
+              {currencies.map((option) => (
+                <MenuItem key={option.value} value={option.value}>
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
           </div>
         </div>
         <div className="amount">

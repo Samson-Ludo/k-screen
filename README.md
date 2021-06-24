@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# K Screen
 
+![k-screen](https://user-images.githubusercontent.com/43629180/123233402-f34b8c00-d4d1-11eb-87ad-437b004f4805.png)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Visit the live site [here](https://k-screen-by-samson.netlify.app/balances).
 
 ## Available Scripts
 
